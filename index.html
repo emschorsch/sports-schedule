@@ -35,6 +35,14 @@
         color: white;
     }
     </style>
+    
+    <script>
+function confirm() {
+    //alert("I am an alert box!");
+    alert("my name is: blah");
+    document.getElementById("schedule").setAttribute("contentEditable", "false");
+}
+</script>
 
 </head>
 
@@ -44,7 +52,7 @@
 
 <p>tony!!!!.</p>
 
-    <table width="80%" align="center" contenteditable="true" >
+    <table id="schedule" width="80%" align="center" contenteditable="true" >
     <tbody>
     <tr contenteditable="false">
         <th><br></th>
@@ -93,13 +101,13 @@
     <tr>
         <th>02:00 - 03:00
         
-            </th><td contenteditable="true"></td><td contenteditable="true"></td><td contenteditable="true"></td><td contenteditable="true"></td><td contenteditable=""></td><td contenteditable="true"><br></td>
+            </th><td></td><td></td><td></td><td></td><td></td><td><br></td>
         
     </tr>
 </tbody>
 </table>
-<div id="edit" contenteditable="true">
-Here is the element's original content
-</div>
+
+<button onclick="confirm()">Confirm</button>
+
 </body>
 </html>
